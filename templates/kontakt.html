@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %}  {% endblock %}</h1>
+    <p>
+        <ul>
+            <h3>
+            <li><a href="/">O mnie</a></li>
+            <li><a href="kontakt">Kontakt</a></li>
+            </h3>
+        </ul>
+    </p>
+    <h4><li>Email:</li></h4>
+    <h4><li>Telefon:</li></h4>
+    <form>
+        <label>Napisz do mnie</label>
+        <input name="element"></input>
+        <input type="submit"/>
+    </form>
+{% endblock %}
