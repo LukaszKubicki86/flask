@@ -13,8 +13,26 @@
     <h4><li>Email:</li></h4>
     <h4><li>Telefon:</li></h4>
     <form>
-        <label>Napisz do mnie</label>
-        <input name="element"></input>
-        <input type="submit"/>
+        <label for="title">Title</label>
+    <br>
+    <input name="title"
+           placeholder="Message title"
+           value="{{ request.form['title'] }}"></input>
+    <br>
+
+    <label for="content">Message Content</label>
+    <br>
+    <textarea name="content"
+              placeholder="Message content"
+              rows="15"
+              cols="60"
+              >{{ request.form['content'] }}</textarea>
+    <br>
+    <button type="submit">Submit</button>
     </form>
 {% endblock %}
+
+
+<form method="post">
+    
+</form>
